@@ -1,0 +1,6 @@
+# decode_single.py
+import base64
+with open("app_asar_b64.txt", "rb") as f:
+    data = f.read()
+with open("app.asar", "wb") as f:
+    f.write(base64.b64decode(data))
